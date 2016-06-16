@@ -10,6 +10,6 @@ WORKDIR /home
 
 EXPOSE 8080
 
-CMD ["java","","-jar","gs-spring-boot-0.1.0.jar","--spring.profiles.active=$ENVIRONMENT"]
+CMD ["java","-jar","gs-spring-boot-0.1.0.jar","--spring.profiles.active=$ENVIRONMENT"]
 
 # EOF
