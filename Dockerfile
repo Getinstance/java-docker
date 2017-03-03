@@ -8,6 +8,9 @@ WORKDIR /home
 
 EXPOSE 8080
 
-CMD ["java","-jar","fenix-api.jar"]
+COPY fenix-api.jar /home/fenix-api.jar
+COPY application.yml /home/application.yml
+
+CMD ["java","-jar","/fenix-api.jar"]
 
 # EOF
